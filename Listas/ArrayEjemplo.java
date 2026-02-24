@@ -1,6 +1,8 @@
+package Listas;
+
 import java.util.ArrayList;
 
-public class array {
+public class ArrayEjemplo {
 
     public static void main(String[] args) {
 
