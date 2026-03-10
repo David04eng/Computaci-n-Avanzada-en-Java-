@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My App Spring Boot</title>
+    <link rel="stylesheet" th:href="@{/ccs/style.css}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a Spring Boot</h1>
+        <p th:text="${message}">Aquí aparecerá el mensaje del controlador</p>
+    </div>
+</body>
+</html>
