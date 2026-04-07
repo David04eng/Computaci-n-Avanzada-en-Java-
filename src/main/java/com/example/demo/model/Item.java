@@ -1,0 +1,29 @@
+package com.example.demo.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+//representa  una tabla en la base de datos 
+@Entity
+public class Item {
+    @Id
+    // Define que este atributo es la Llave Primaria (Primary Key).
+    
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    //el atributo llamado "nombre en la tabla"
+    
+    private String nombre;
+    //setter y getters manuales 
+    public Long getId() { 
+        return id; 
+    }
+    public void setId(Long id) { 
+        this.id = id; 
+    }
+    public String getNombre() { 
+        return nombre; 
+    }
+    public void setNombre(String nombre) { this.nombre = nombre; }
+}
